@@ -1,0 +1,103 @@
+@media (min-width: 600px) {
+  main .main-presentation, .main-about, .main-skills, .main-projects {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  main .content-delimiter-presentation, .content-delimiter {
+    grid-column: 2 / span 10;
+  }
+  
+  main .main-presentation figure img {
+    width: 250px;
+  }
+
+  main .main-skills .skills-container span {
+    padding: 15px;
+    flex-basis: 160px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  header .content-delimiter-header {
+    max-width: 850px;
+  }
+
+  header figure img {
+    width: 40px;
+  }
+
+  header nav button {
+    display: none;
+  }
+
+  header nav .header-menu-navbar {
+    height: auto;
+    display: flex;
+    gap: 50px;
+  }
+
+  header nav .header-menu-navbar li {
+    display: block;
+  }
+
+  main .content-delimiter-presentation {
+    max-width: 850px;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  main .content-delimiter {
+    max-width: 930px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  main .main-presentation figure img {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1100px) {
+  main .main-presentation, .main-about, .main-skills, .main-projects {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  main .content-delimiter-presentation, .content-delimiter {
+    grid-column: 3 / span 8;
+  }
+
+  main .main-presentation article h1 {
+    font-size: 4.5rem;
+  }
+
+  main .main-presentation article h2 {
+    font-size: 3.1rem;
+    letter-spacing: 3px;
+  }
+
+  main :is(.main-presentation article, .main-about .about-me) p {
+    font-size: 1.6rem;
+    margin-top: 25px;
+  }
+
+  main .main-presentation figure img {
+    width: 320px;
+  }
+
+  main .main-skills article {
+    gap: 30px;
+  }
+
+  main .main-skills .skills-container span {
+    flex-basis: 180px;
+  }
+
+  main .main-projects article a {
+    width: 280px;
+    padding: 25px 6px;
+  }
+}
