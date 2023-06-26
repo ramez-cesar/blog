@@ -160,3 +160,86 @@ main .main-presentation figure img {
   width: 220px;
 }
 
+/* ======================================== main - about ======================================== */
+
+main :is(.main-about, .main-skills, .main-projects) {
+  padding: 25px;
+}
+
+main :is(.main-about, .main-skills, .main-projects) h3 {
+  font-size: 2.5rem;
+  word-spacing: 2px;
+}
+
+main .main-about :is(.about-photo, .about-me) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .main-about {
+  background-image: linear-gradient(to bottom, #eef6ff, #fafcff, #ffffff, transparent);
+}
+
+main .main-about .about-photo picture {
+  width: 150px;
+  height: 150px;
+  display: grid;
+  place-content: center;
+  border: 2px solid #1B6B93;
+  border-radius: 50%;
+}
+
+main .main-about .about-photo picture img {
+  width: 140px;
+  border-radius: 50%;
+}
+
+main .main-about .about-photo .about-social-media, footer .footer-container .about-social-media {
+  width: 100%;
+  max-width: 200px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main .main-about .about-photo .about-social-media a {
+  padding: 6px;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  display: grid;
+  place-content: center;
+  background-color: #191847;
+  transition: 0.3s;
+}
+
+main .main-about .about-photo .about-social-media a:hover,
+footer .footer-container .about-social-media a:hover {
+  background-color: #025781;
+}
+
+main .main-about .about-photo .about-social-media a svg {
+  width: 20px;
+  height: 20px;
+}
+
+main .main-about .about-me {
+  align-items: start;
+}
+
+main .main-about .about-me a {
+  padding: 10px;
+  color: white;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  background-color: #E76161;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+main .main-about .about-me a:hover {
+  background-color: #FF6969;
+}
+
