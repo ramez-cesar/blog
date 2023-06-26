@@ -281,6 +281,64 @@ main .main-skills .skills-container span svg {
   height: 30px;
 }
 
+/* ======================================== main - projects ======================================== */
+
+main .main-projects article {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+main .main-projects article a {
+  padding: 15px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  flex-basis: 260px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid #c1c1c1;
+  box-shadow: 0px 6px 12px 0px #c3c3c3;
+  transition: 0.5s;
+}
+
+main .main-projects article a:hover {
+  translate: 0 -4px;
+  border: 1px solid #ffc7c7;
+  box-shadow: 0px 6px 12px 0px #ffd0d0;
+}
+
+main .main-projects article a h4 {
+  font-size: 1.6rem;
+  font-family: Poppins, sans-serif;
+}
+
+main .main-projects article a time {
+  color: #8b8b8b;
+  font-size: 1.2rem;
+  margin-top: -8px;
+}
+
+main .main-projects article a span {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+main .main-projects article a span svg {
+  width: 30px;
+  height: 30px;
+}
+
+main .main-projects article a p {
+  font-size: 1.5rem;
+}
+
 @keyframes shadow-pulse {
   0% {
     box-shadow: 0 0 0 0 rgba(79, 193, 208, 0.596);
