@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url('../assets/fonts/poppins-v20-latin-700.woff2') format('woff2');
+  font-weight: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/poppins-v20-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-display: fallback;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body, a, time {
+  color: #505a5f;
+  font-family: Poppins, sans-serif;
+  letter-spacing: .5px;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  color: #37474F;
+  font-family: 'Poppins Bold', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  padding: 0 25px;
+  border-bottom: 1px solid rgb(221 221 221);
+}
+
+header .content-delimiter-header {
+  margin: 0 auto;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header figure {
+  display: grid;
+  place-content: center;
+}
+
+header figure img {
+  width: 30px;
+  border-radius: 10px;
+}
+
+header nav button {
+  border: none;
+  background-color: transparent;
+}
+
+header nav .header-menu-navbar {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+header nav .header-menu-navbar li {
+  display: none;
+}
+
+header nav .show-menu {
+  height: 16rem;
+  margin-top: 14px;
+  text-align: center;
+  background-color: rgb(243, 243, 243);
+  position: absolute;
+  left: 0;
+  transition: all .4s linear;
+}
+
+header nav .show-menu li {
+  display: block;
+  list-style: none;
+  line-height: 50px;
+}
+
+header nav ul li a {
+  display: block;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #2196F3;
+  text-decoration-thickness: 2px;
+}
+
