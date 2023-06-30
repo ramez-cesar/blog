@@ -45,7 +45,8 @@
   main .content-delimiter-presentation {
     max-width: 850px;
     margin: 0 auto;
-    flex-direction: row;
+    display: flex;
+    align-items: center;
     gap: 20px;
   }
 
