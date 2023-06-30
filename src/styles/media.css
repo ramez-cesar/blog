@@ -59,6 +59,19 @@
   main .main-presentation figure img {
     width: 300px;
   }
+
+  main .main-skills .skills-container span:hover {
+    animation: shadow-pulse 1s 1;
+  }
+    
+  @keyframes shadow-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(79, 193, 208, 0.596);
+    }
+    100% {
+      box-shadow: 0 0 4px 12px rgba(27, 255, 244, 0);
+    }
+  }
 }
 
 @media (min-width: 1100px) {

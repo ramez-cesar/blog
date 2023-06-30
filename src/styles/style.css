@@ -270,10 +270,6 @@ main .main-skills .skills-container span {
   transition: all 0.1s linear;
 }
 
-main .main-skills .skills-container span:hover {
-  animation: shadow-pulse 1s 1;
-}
-
 main .main-skills .skills-container span svg {
   width: 30px;
   height: 30px;
@@ -375,11 +371,3 @@ footer .footer-container .about-social-media a svg {
   height: 20px;
 }
 
-@keyframes shadow-pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(79, 193, 208, 0.596);
-  }
-  100% {
-    box-shadow: 0 0 4px 12px rgba(27, 255, 244, 0);
-  }
-}
