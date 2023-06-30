@@ -12,6 +12,14 @@
   font-display: fallback;
 }
 
+:root {
+  --color-title: #ffffff;
+  --light-gray: #d9d9d9;
+  --tomato-color: #EA5455;
+  --light-blue: #1f9f98;
+  --dark-gray: #3d444d;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,15 +30,14 @@ html {
   font-size: 62.5%;
 }
 
-body, a, time {
-  color: #505a5f;
+body, a, button, time {
+  color: var(--light-gray);
   font-family: Poppins, sans-serif;
-  letter-spacing: .5px;
   scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4 {
-  color: #37474F;
+  color: var(--color-title);
   font-family: 'Poppins Bold', sans-serif;
 }
 
@@ -38,7 +45,8 @@ header {
   width: 100%;
   height: 70px;
   padding: 0 25px;
-  border-bottom: 1px solid rgb(221 221 221);
+  border-bottom: 1px solid #9DB2BF;
+  background-color: #1B2430;
 }
 
 header .content-delimiter-header {
@@ -55,8 +63,9 @@ header figure {
 }
 
 header figure img {
-  width: 30px;
-  border-radius: 10px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--light-gray);
 }
 
 header nav button {
@@ -78,10 +87,13 @@ header nav .show-menu {
   height: 16rem;
   margin-top: 14px;
   text-align: center;
-  background-color: rgb(243, 243, 243);
+  background-color: #2B3A55;
   position: absolute;
   left: 0;
   transition: all .4s linear;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom: 2px solid #2b88a1;
 }
 
 header nav .show-menu li {
@@ -100,7 +112,7 @@ header nav ul li a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-color: #2196F3;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1px;
 }
 
 /* ======================================== main - presentaion ======================================== */
@@ -124,26 +136,34 @@ main .main-presentation {
   padding: 25px;
   height: calc(100vh - 70px);
   min-height: 450px;
+  background-color: #1B2430;
+}
+
+main .main-presentation article h3 {
+  color: var(--light-gray);
+  font-size: 2rem;
+  font-family: 'Poppins Bold', sans-serif;
 }
 
 main .main-presentation article h1 {
   font-size: 3.3rem;
+  margin-top: -5px;
   word-spacing: 2px;
 }
 
 main .main-presentation article h2 {
   font-size: 2.2rem;
   margin-top: -12px;
-  color: #E76161;
+  color: var(--tomato-color);
   word-spacing: 2px;
-  letter-spacing: 2.8px;
+  letter-spacing: 2.4px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main :is(.main-presentation article, .main-about .about-me) p {
   margin-top: 15px;
-  font-size: 1.5rem;
-  letter-spacing: 0.8px;
+  font-size: 1.4rem;
+  word-spacing: 2px;
 }
 
 main .main-presentation figure {
@@ -151,7 +171,8 @@ main .main-presentation figure {
   max-width: 325px;
   display: grid;
   place-content: center;
-  background-image: radial-gradient(circle, #9fc1ff, #d9e7fd, #ffffff, transparent);
+  position: relative;
+  background-image: radial-gradient(circle, #133d91, #14284f, #1b2430, transparent);
 }
 
 main .main-presentation figure img {
@@ -161,7 +182,7 @@ main .main-presentation figure img {
 /* ======================================== main - about ======================================== */
 
 main :is(.main-about, .main-skills, .main-projects) {
-  padding: 25px;
+  padding: 35px 25px;
 }
 
 main :is(.main-about, .main-skills, .main-projects) h3 {
@@ -175,16 +196,16 @@ main .main-about :is(.about-photo, .about-me) {
   align-items: center;
 }
 
-main .main-about {
-  background-image: linear-gradient(to bottom, #eef6ff, #fafcff, #ffffff, transparent);
+main .main-about, .main-projects {
+  background-color: #181f2a;
 }
 
 main .main-about .about-photo picture {
-  width: 150px;
-  height: 150px;
+  width: 155px;
+  height: 155px;
   display: grid;
   place-content: center;
-  border: 2px solid #1B6B93;
+  border: 2px solid var(--light-blue);
   border-radius: 50%;
 }
 
@@ -193,7 +214,8 @@ main .main-about .about-photo picture img {
   border-radius: 50%;
 }
 
-main .main-about .about-photo .about-social-media, footer .footer-container .about-social-media {
+main .main-about .about-photo .about-social-media,
+footer .footer-container .about-social-media {
   width: 100%;
   max-width: 200px;
   margin-top: 20px;
@@ -201,20 +223,16 @@ main .main-about .about-photo .about-social-media, footer .footer-container .abo
   justify-content: space-evenly;
 }
 
-main .main-about .about-photo .about-social-media a {
+:is(main .main-about .about-photo .about-social-media,
+footer .footer-container .about-social-media) a {
   padding: 6px;
-  color: white;
+  color: #132033;
   border-radius: 10px;
   text-decoration: none;
   display: grid;
   place-content: center;
-  background-color: #191847;
+  background-color: var(--light-blue);
   transition: 0.3s;
-}
-
-main .main-about .about-photo .about-social-media a:hover,
-footer .footer-container .about-social-media a:hover {
-  background-color: #025781;
 }
 
 main .main-about .about-photo .about-social-media a svg {
@@ -232,13 +250,9 @@ main .main-about .about-me a {
   margin-top: 20px;
   font-size: 1.4rem;
   border-radius: 8px;
-  background-color: #E76161;
+  background-color: var(--tomato-color);
   text-decoration: none;
   transition: 0.3s;
-}
-
-main .main-about .about-me a:hover {
-  background-color: #FF6969;
 }
 
 /* ======================================== main - skills ======================================== */
@@ -260,14 +274,18 @@ main .main-skills article {
 main .main-skills .skills-container span {
   width: 115px;
   padding: 10px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
   font-weight: 700;
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #c1c1c1;
+  border: 1px solid var(--dark-gray);
   gap: 10px;
+  background-color: rgba(24, 31, 42, 0.5);
   transition: all 0.1s linear;
+  box-shadow: 6px 6px 6px #141b25;
+  border-radius: 10px;
 }
 
 main .main-skills .skills-container span svg {
@@ -279,6 +297,7 @@ main .main-skills .skills-container span svg {
 
 main .main-projects article {
   width: 100%;
+  margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -294,20 +313,20 @@ main .main-projects article a {
   flex-basis: 260px;
   text-decoration: none;
   border-radius: 10px;
-  border: 1px solid #c1c1c1;
-  box-shadow: 0px 6px 12px 0px #c3c3c3;
+  border: 1px solid var(--dark-gray);
+  box-shadow: 6px 6px 6px #0a121f;
   transition: 0.5s;
 }
 
 main .main-projects article a:hover {
   translate: 0 -4px;
-  border: 1px solid #ffc7c7;
-  box-shadow: 0px 6px 12px 0px #ffd0d0;
+  border: 1px solid #5c7292;
+  box-shadow: 0px 0px 15px 0px #07809b;
 }
 
 main .main-projects article a h4 {
-  font-size: 1.6rem;
-  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.8px;
 }
 
 main .main-projects article a time {
@@ -330,17 +349,16 @@ main .main-projects article a span svg {
 }
 
 main .main-projects article a p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 /* ======================================== footer ======================================== */
 
 footer {
   width: 100%;
-  margin-top: 30px;
   padding: 20px 30px;
-  border-top: 1px solid rgb(221 221 221);
-  background-color: #efefef;
+  border-top: 1px solid #9DB2BF;
+  background-color: #1b2430;
 }
 
 footer .footer-container {
@@ -350,20 +368,9 @@ footer .footer-container {
 }
 
 footer .footer-container p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   letter-spacing: 0.4px;
   text-align: center;
-}
-
-footer .footer-container .about-social-media a {
-  padding: 6px;
-  color: white;
-  border-radius: 10px;
-  text-decoration: none;
-  display: grid;
-  place-content: center;
-  background-color: #191847;
-  transition: 0.3s;
 }
 
 footer .footer-container .about-social-media a svg {
