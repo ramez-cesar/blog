@@ -134,7 +134,7 @@ main .content-delimiter-presentation {
 main .main-presentation {
   width: 100%;
   padding: 25px;
-  height: calc(100vh - 70px);
+  height: calc(100dvh - 70px);
   min-height: 450px;
   background-color: #1B2430;
 }
