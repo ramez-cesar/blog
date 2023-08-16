@@ -140,9 +140,9 @@ main .main-presentation {
 }
 
 main .main-presentation article h3 {
+  margin-bottom: 15px;
   color: var(--light-gray);
   font-size: 2rem;
-  font-family: 'Poppins Bold', sans-serif;
 }
 
 main .main-presentation article h1 {
@@ -232,7 +232,13 @@ footer .footer-container .about-social-media) a {
   display: grid;
   place-content: center;
   background-color: var(--light-blue);
-  transition: 0.3s;
+  transition: 0.4s;
+}
+
+:is(main .main-about .about-photo .about-social-media,
+footer .footer-container .about-social-media) a:hover {
+  color: var(--color-title);
+  background-color: #1a857f;
 }
 
 main .main-about .about-photo .about-social-media a svg {
@@ -253,6 +259,10 @@ main .main-about .about-me a {
   background-color: var(--tomato-color);
   text-decoration: none;
   transition: 0.3s;
+}
+
+main .main-about .about-me a:hover {
+  background-color: #e93b3b;
 }
 
 /* ======================================== main - skills ======================================== */
@@ -373,8 +383,12 @@ footer .footer-container p {
   text-align: center;
 }
 
+footer .footer-container .about-social-media {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 footer .footer-container .about-social-media a svg {
   width: 20px;
   height: 20px;
 }
-
