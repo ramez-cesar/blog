@@ -360,6 +360,13 @@ main .main-projects article a span svg {
 
 main .main-projects article a p {
   font-size: 1.4rem;
+  text-align: center;
+}
+
+main .main-projects article a p span {
+  display: inline;
+  font-weight: 600;
+  color: var(--tomato-color);
 }
 
 /* ======================================== footer ======================================== */
