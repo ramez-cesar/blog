@@ -164,6 +164,7 @@ main :is(.main-presentation article, .main-about .about-me) p {
   margin-top: 15px;
   font-size: 1.4rem;
   word-spacing: 2px;
+  text-wrap: balance;
 }
 
 main .main-presentation figure {
