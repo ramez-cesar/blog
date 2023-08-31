@@ -113,9 +113,4 @@
   main .main-skills .skills-container span {
     flex-basis: 180px;
   }
-
-  main .main-projects article a {
-    width: 280px;
-    padding: 25px 6px;
-  }
 }

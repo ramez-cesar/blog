@@ -306,68 +306,68 @@ main .main-skills .skills-container span svg {
 
 /* ======================================== main - projects ======================================== */
 
-main .main-projects article {
+main .main-projects .projects {
   width: 100%;
   margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 43px;
 }
 
-main .main-projects article a {
-  padding: 15px 6px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
+main .main-projects .projects article {
   flex-basis: 260px;
-  text-decoration: none;
   border-radius: 10px;
   border: 1px solid var(--dark-gray);
   box-shadow: 6px 6px 6px #0a121f;
   transition: 0.5s;
 }
 
-main .main-projects article a:hover {
+main .main-projects .projects article:hover {
   translate: 0 -4px;
   border: 1px solid #5c7292;
   box-shadow: 0px 0px 15px 0px #07809b;
 }
 
-main .main-projects article a h4 {
+main .main-projects .projects article a {
+  text-decoration: none;
+}
+
+main .main-projects .projects article a picture {
+  padding: 8px;
+  display: flex;
+}
+
+main .main-projects .projects article a img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+main .main-projects .projects article a div {
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+main .main-projects .projects article a div h4 {
   font-size: 1.5rem;
   letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 
-main .main-projects article a time {
-  color: #8b8b8b;
-  font-size: 1.2rem;
-  margin-top: -8px;
-}
-
-main .main-projects article a span {
-  margin: 12px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-main .main-projects article a span svg {
-  width: 30px;
-  height: 30px;
-}
-
-main .main-projects article a p {
-  font-size: 1.4rem;
+main .main-projects .projects article a div p {
+  font-size: 1.3rem;
   text-align: center;
 }
 
-main .main-projects article a p span {
+main .main-projects .projects article a div p span {
   display: inline;
   font-weight: 600;
-  color: var(--tomato-color);
+  color: #54b6ff;
 }
 
 /* ======================================== footer ======================================== */
