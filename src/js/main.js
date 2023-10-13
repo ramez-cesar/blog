@@ -14,4 +14,4 @@ navMenu.forEach(menu => {
 })
 
 const year = new Date()
-copyright.textContent = `© ${year.getFullYear()} César Ramírez | Frontend Developer`
+copyright.textContent = `© ${year.getFullYear()} César Ramez | Frontend Developer`
